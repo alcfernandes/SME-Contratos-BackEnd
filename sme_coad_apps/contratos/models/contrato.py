@@ -120,6 +120,10 @@ class Contrato(ModeloBase):
             total += unidade.valor_mensal
         return total
 
+    @property
+    def dres(self):
+        return ""
+
     def __str__(self):
         return self.termo_contrato
 
